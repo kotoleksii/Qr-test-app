@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {Todo} from "../shared/classes/todo-list";
 import {NotifierService} from "angular-notifier";
 
@@ -15,7 +15,7 @@ export class TodoListService {
     if (todos.length == 0) {
       this.nextId = 0;
     } else {
-      let maxId = todos[todos.length-1].id;
+      let maxId = todos[todos.length - 1].id;
       this.nextId = maxId + 1;
     }
   }
@@ -35,6 +35,6 @@ export class TodoListService {
   }
 
   private static setLocalStorageTodos(todos: Todo[]): void {
-    localStorage.setItem('todos', JSON.stringify({ todos: todos }));
+    localStorage.setItem('todos', JSON.stringify({todos: todos}));
   }
 }

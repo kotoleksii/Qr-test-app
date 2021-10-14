@@ -4,7 +4,7 @@ import {ModalComponent} from "../shared/modal/modal.component";
 import {TodoListService} from "./todo-list.service";
 import {Router} from "@angular/router";
 import {QrReaderModalComponent} from "../shared/qr-reader-modal/qr-reader-modal.component";
-import { Todo } from '../shared/classes/todo-list';
+import {Todo} from '../shared/classes/todo-list';
 
 
 @Component({
@@ -31,7 +31,7 @@ export class TodoListComponent implements OnInit {
     console.log(JSON.parse(event));
 
     const dialogRef = this.dialog.open(QrReaderModalComponent, {
-      data: { text: JSON.parse(event) },
+      data: {text: JSON.parse(event)},
     });
 
     dialogRef.afterClosed().subscribe(result => {

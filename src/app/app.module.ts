@@ -7,7 +7,7 @@ import {RouterModule} from "@angular/router";
 import {ModalModule} from "./shared/modal/modal.module";
 import {NotifierModule} from "angular-notifier";
 import {MatDialogModule} from "@angular/material/dialog";
-import { QrReaderModalComponent } from './shared/qr-reader-modal/qr-reader-modal.component';
+import {QrReaderModalComponent} from './shared/qr-reader-modal/qr-reader-modal.component';
 import {QrReaderModalModule} from "./shared/qr-reader-modal/qr-reader-modal.module";
 
 @NgModule({

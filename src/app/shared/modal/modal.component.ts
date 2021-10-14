@@ -30,7 +30,10 @@ export class ModalComponent implements OnInit {
     } else {
       this.todoListService.addTodo(this.taskText);
       this.notifierService.notify('success', 'bingo!');
-      // this.router.navigate(['todo-list']);
+      this.router.navigate(['todo-list'])
+        .then(() => {
+          window.location.reload();
+        });
       this.dialogRef.close();
     }
   }
